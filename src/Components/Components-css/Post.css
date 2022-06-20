@@ -1,0 +1,50 @@
+.Post-component{
+    padding-top: 70px;
+}
+
+
+.container-post{
+    border-radius: 15px;
+    box-shadow: 1px 0 7px 0px rgba(0,0,0,0.75);;
+}
+
+.image-post img{
+    border-radius: 15px 15px 0 0 ;
+}
+
+.Text-post{
+    padding: 15px 25px;
+    position: relative;
+}
+
+.Text-post a{
+    text-decoration: none;
+    color: #c36;
+    font-size: 18px;
+}
+
+.Text-post a:hover{
+    text-decoration: underline;
+    color: var( --color-blue);
+}
+
+.Text-post h4, .Text-post p{
+    text-align: center;
+}
+
+.Text-post p{
+    line-height: normal;
+    font-size: 14px;
+    word-spacing:normal;
+    padding-bottom: 10px;
+    
+}
+
+.line-division{
+    position: absolute;
+    background-color: var(--color-border);
+    height: 1px;
+    width: 100%;
+    left: 0;
+}
+

@@ -1,15 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;600&display=swap');
-*{
-    font-family: 'Libre Franklin', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    --color-text-main: #31353D;
-    --color-border: #e7e7e7;
-    --color-text-secundary: #CE9461;
-    --color-blue: #6EC1E4; 
-    --color-red: #C36;
-}
 
 /* SUBMENU */
 
@@ -123,11 +111,12 @@ li{
     display: flex;
     justify-content: center;
     border: solid 1px var(--color-border);
+    width: 150px;
 }
 
-.header li ul{
-    display: none;
+.header .menu-item ul{
     position: absolute;
+    display: none;
     margin: auto;
 }
 
@@ -138,84 +127,49 @@ li{
 }
 
 
-/* BODY */
+.menu-main-item{
+    position: relative;
+}
 
-.container-center{
+.subsitems{
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 149px;
+    
+}
+
+.menu-main-item:hover .subsitems{
+    display: block;
+}
+
+
+.subsitem > a{
+    font-size: normal;
+    padding: 0 0;
+    width: 300px;
+}
+
+
+.menu-main-item {
     display: flex;
-    width: 70%;
-    flex-direction: column;
-    margin: auto;
-    padding: auto;
+    align-items: center;
 }
 
-.title-IFAD h2{
-    text-align: center;
-    font-size: 40px;
-    padding: 20px;
+.menu-main-item > i{
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
 }
 
-img{
+.menu-item span {
+    margin-left: 10px;
+}
+
+.follow{
+    top: -57px;
+    transition: 1s all;
+    position: fixed;
     width: 100%;
+    background-color: #fff;
 }
-
-.info-main{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.info-main>div{
-    width: 50%;
-    padding: 20px 20px;
-}
-
-.icons-main span > a{
-    font-size: 20px;
-    margin: 0 5px;
-    transition: .5s all;
-    color: var(--color-text-main)
-}
-
-.icons-main  span:hover > a{
-    color: var(--color-text-secundary);
-}
-
-
-.text-main{
-    width: 700px;
-    margin: auto;
-    padding: 50px;
-}
-
-.text-main p {
-    text-align: justify;
-    padding-top: 20px;
-    word-spacing: 6px;
-    line-height: 30px;
-    font-weight: 200;
-}
-
-
-.text-main li{
-    list-style: outside;
-    margin: 0 35px;
-}
-
-.text-main h3{
-    padding-top: 30px;
-    font-size: 30px;
-    word-spacing: 20px;
-    line-height: 50px;
-}
-
-
-.icons-below-text{
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-}
-
-.icons-below-text i{
-    font-size: 25px;
-    margin: 0 5px;
-}
-

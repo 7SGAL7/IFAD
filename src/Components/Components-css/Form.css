@@ -1,0 +1,31 @@
+.form-website > p{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-website input[type=text], .form-website input[type=email], .form-website textarea{
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+.form-website input[type=submit]{
+    background-color: transparent;
+    border: solid 1px #c36;
+    color: #c36;
+    padding: 8px 16px;
+    width: 200px;
+    font-size: 15px;
+    border-radius: 3px;
+    transition: .5s all;
+}
+
+.form-website input[type=submit]:hover{
+    border-color: black;
+    color: white;
+    background-color: #c36;
+    cursor: pointer;
+}
+
+textarea{
+    height: 200px;
+}
